@@ -2,29 +2,21 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Main</title>
+    <title>History</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet"> 
     <script type="text/javascript" src="script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
    </head>
  <body>
- 	<div class="head"><h1 class="display-6">Программа по работе с RFID метками</h1></div>
+ 	<div class="head"><h1 class="display-6">История метки</h1></div>
     <div class="container">        
-            <div class="for">
-	    		<form method="POST">
-	  				<input type="text" id="search">
-	 				<input type="button" class="btn btn-dark" name="" value=" Поиск документа " onclick="mysearch()">
-				</form>
-			</div>
 			<table class="table">
 			  <thead>
 			    <tr>
 			      <th scope="col">ID</th>
-			      <th scope="col">Имя документа</th>
-			      <th scope="col">Полка</th>
-			      <th scope="col">Стелаж</th>
-			      <th scope="col">История</th>
+			      <th scope="col">Антена</th>
+			      <th scope="col">Время</th>
 			    </tr>
 			  </thead>
 			  <tbody>
@@ -32,8 +24,6 @@
 			      <th scope="row"></th>
 			      <td></td>
 			      <td></td>
-			      <td></td>
-			      <td><a href="/history.html" target="_blank"><button type="submit" class="btn btn-dark" onclick="show_()"> Открыть </button></a></td>
 			    </tr>
 			  </tbody>
 			</table>

@@ -1,4 +1,5 @@
 const { app, BrowserWindow } = require('electron')
+var mysql = require('mysql');
 
 let win
 
@@ -25,4 +26,5 @@ app.on('activate', () => {
     createWindow()
   }
 })
+
 

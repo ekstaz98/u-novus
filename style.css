@@ -3,5 +3,28 @@
 	padding:0;
 }
 input{
-	
+	border-radius: 10px;
+	border:2px solid black;
+	height: 34px;
+}
+body{
+	background-color: #E9ECEF;
+}
+.for {
+	float: right;
+}
+#search{
+	margin: 20px;
+}
+.head{
+	text-align: center;
+	width: 100%;
+	background-color: #BDB76B;
+	padding: 30px;
+}
+.table td, .table th{
+	border-top: 1px solid black;
+}
+.table thead th{
+	border-bottom: 1px solid black;
 }

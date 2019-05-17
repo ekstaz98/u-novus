@@ -7,34 +7,27 @@
     <link href="style.css" rel="stylesheet"> 
     <script type="text/javascript" src="script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script language="javascript">mysearch();</script>
    </head>
  <body>
  	<div class="head"><h1 class="display-6">Программа по работе с RFID метками</h1></div>
-    <div class="container">        
-            <div class="for">
-	    		<form method="POST">
-	  				<input type="text" id="search">
-	 				<input type="button" class="btn btn-dark" name="" value=" Поиск документа " onclick="mysearch()">
+    <div class="container">    
+            <div class="forms">
+	    		<form>
+	  				<input type="text" id="searchdoc">
+	 				<button type="submit" class="btn btn-dark" onclick="show_()"> Поиск документа </button>
 				</form>
 			</div>
+			<div id="result"></div>
 			<table class="table">
 			  <thead>
 			    <tr>
 			      <th scope="col">ID</th>
-			      <th scope="col">Имя документа</th>
-			      <th scope="col">Полка</th>
-			      <th scope="col">Стелаж</th>
-			      <th scope="col">История</th>
+			      <th scope="col">Номер антены</th>
+			      <th scope="col">Статус</th>
 			    </tr>
 			  </thead>
-			  <tbody>
-			    <tr>
-			      <th scope="row"></th>
-			      <td></td>
-			      <td></td>
-			      <td></td>
-			      <td><a href="/history.html" target="_blank"><button type="submit" class="btn btn-dark" onclick="show_()"> Открыть </button></a></td>
-			    </tr>
+			  <tbody id="myt">
 			  </tbody>
 			</table>
     </div>
